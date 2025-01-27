@@ -1,6 +1,8 @@
 site_name: NeuralNoble
 site_description: Explore deep learning, machine learning, and MLOps through personal projects, tutorials, and insights. Join me as I dive into the world of AI and share my journey.
 site_url: https://NeuralNoble.github.io
+site_author: Aman Anand
+repo_name: NeuralNoble/NeuralNoble.github.io
 theme:
   name: "material"
   custom_dir: overrides
@@ -20,6 +22,16 @@ theme:
     - navigation.top
     - search.highlight
     - search.suggest
+    - content.action.edit
+    - content.action.view
+    - navigation.sections
+    - navigation.footer
+    - navigation.tracking
+    - search.share
+    - toc.follow
+
+
+
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
