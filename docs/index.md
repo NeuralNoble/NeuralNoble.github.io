@@ -22,21 +22,16 @@ icon: octicons/home-fill-24
 
   <p style="text-align: center; font-size: 25px; margin: 0px;"><strong>Aman Anand</strong></p>
   <p style="text-align: center; margin: 0px;">
-    Hey, I am Anshul Raj Verma and I am a Data Scientist. I am Learning ML, NLP and MLOps and also building projects which helps me to grow and learn from mistakes which I have done during building the project.
-  </p>
+I’m a second -year Computer Science undergraduate ,based in Bangalore, with a deep passion for understanding how the universe around us works. Currently, I’m teaching myself machine learning and deep learning, driven by curiosity and a desire to build and improve technologies. I thrive on pushing the boundaries of what’s possible and exploring new frontiers in tech.
+</p>
 </p>
 
 ---
 
 <div class="grid cards" markdown>
-
-[:material-account-box:{ .lg .middle }&nbsp; **About** &nbsp;](about/index.md){ .md-button style="text-align: center; display: block;" }
-
 [:fontawesome-brands-blogger-b:{ .lg .middle }&nbsp; **Blogs** &nbsp;](blog/index.md){ .md-button style="text-align: center; display: block;" }
 
 [//]: # ([:material-notebook-multiple:{ .lg .middle }&nbsp; **Projects** &nbsp;]&#40;project/index.md&#41;{ .md-button style="text-align: center; display: block;" })
-
-[:material-newspaper:{ .lg .middle }&nbsp; **Resume** &nbsp;](https://github.com/arv-anshul/arv-anshul/raw/main/resume_arv-anshul.pdf){ .md-button style="text-align: center; display: block;" }
 
 
 </div>

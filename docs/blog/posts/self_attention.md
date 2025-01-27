@@ -1,6 +1,5 @@
 ---
-date:
-  created: 2024-11-06
+date: 2024-11-06
   
 authors:
   - Aman
