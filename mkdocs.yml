@@ -3,6 +3,7 @@ site_description: Explore deep learning, machine learning, and MLOps through per
 site_url: https://NeuralNoble.github.io
 theme:
   name: "material"
+  custom_dir: overrides
   icon:
     repo: material/book
     logo: fontawesome/solid/brain
