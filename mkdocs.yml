@@ -1,0 +1,142 @@
+site_name: NeuralNoble
+site_description: Explore deep learning, machine learning, and MLOps through personal projects, tutorials, and insights. Join me as I dive into the world of AI and share my journey.
+site_url: https://NeuralNoble.github.io
+theme:
+  name: "material"
+  icon:
+    repo: material/book
+    logo: fontawesome/solid/brain
+
+  features:
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - content.tabs.link
+    - content.tooltips
+    - navigation.indexes
+    - navigation.path
+    - navigation.tabs
+    - navigation.top
+    - search.highlight
+    - search.suggest
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+#  palette:
+#    # dark mode
+#    - scheme : slate
+#      toggle:
+#        icon: material/weather-sunny
+#        name: Dark mode
+#      primary:
+#      accent: green
+#    # Light mode
+#    - scheme: default
+#      toggle:
+#        icon: material/weather-night
+#        name: Light mode
+#      primary:  orange
+#      accent: teal
+
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite:
+      custom_inline:
+        - name: math
+          class: arithmatex
+          format:
+            !!python/object/apply:pymdownx.arithmatex.arithmatex_inline_format
+            kwds: { which: generic }
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.snippets
+  - pymdownx.tilde
+  - tables
+  - pymdownx.tasklist:
+      custom_checkbox: true
+#  - toc:
+#      permalink: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+        - name: math
+          class: arithmatex
+          format:
+            !!python/object/apply:pymdownx.arithmatex.arithmatex_fenced_format
+            kwds: { which: generic }
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+
+extra:
+  social:
+      - icon: material/email
+        link: mailto:amananand1618@gmail.com
+        name: E-Mail
+      - icon: fontawesome/brands/github
+        link: https://github.com/NeuralNoble
+        name: See my GitHub Profile
+      - icon: fontawesome/brands/linkedin
+        link: https://www.linkedin.com/in/aman-anand-10b51320b/
+        name: Connect on LinkedIn
+  #    - icon: material/account-box
+  #      link: https://github.com/arv-anshul/arv-anshul/raw/main/resume_arv-anshul.pdf
+  #      name: Resume as PDF
+
+copyright: |
+  Copyright &copy; 2025 <a href="https://github.com/NeuralNoble">Aman Anand</a>
+
+
+
+
+# Plugins
+plugins:
+  - blog:
+        path: blog/posts
+        archive_date_format: yyyy
+        archive_url_date_format: yyyy/MM
+        generate_archive: true
+        post_url_format: "{slug}"
+  - search:
+  - minify:
+      minify_html: true
+
+
+hooks:
+  - hooks/socialmedia.py
+
+
+nav:
+  - Home: index.md
+  - Blog:
+      - blog/index.md
