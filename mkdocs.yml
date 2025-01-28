@@ -2,6 +2,7 @@ site_name: NeuralNoble
 site_description: Explore deep learning, machine learning, and MLOps through personal projects, tutorials, and insights. Join me as I dive into the world of AI and share my journey.
 site_url: https://NeuralNoble.github.io
 site_author: Aman Anand
+repo_url: https://github.com/NeuralNoble/NeuralNoble.github.io
 repo_name: NeuralNoble/NeuralNoble.github.io
 theme:
   name: "material"
@@ -68,8 +69,6 @@ theme:
 
 
 markdown_extensions:
-  - toc:
-      permalink: true
   - admonition
   - attr_list
   - def_list
@@ -123,7 +122,7 @@ extra:
         link: https://www.linkedin.com/in/aman-anand-10b51320b/
         name: Connect on LinkedIn
   #    - icon: material/account-box
-  #      link: https://github.com/arv-anshul/arv-anshul/raw/main/resume_arv-anshul.pdf
+  #      link:
   #      name: Resume as PDF
 
 copyright: |
@@ -144,12 +143,36 @@ plugins:
   - minify:
       minify_html: true
 
+  - macros:
+      include_yaml:
+        - about: docs/render_yaml/about.yaml
+
+  - glightbox:
+      touchNavigation: false
+      loop: false
+      effect: zoom
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+
 
 hooks:
   - hooks/socialmedia.py
+  - hooks/generate_simpleicons_css.py
+  - hooks/prettify_simpleicons_json.py
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
+
+extra_css:
+  - stylesheets/custom.css
+  - stylesheets/extra.css
+  - stylesheets/simpleicons.css
 
 
 nav:
   - Home: index.md
   - Blog:
       - blog/index.md
+  - About: about/index.md

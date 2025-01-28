@@ -29,7 +29,11 @@ I’m a second -year Computer Science undergraduate ,based in Bangalore, with a 
 ---
 
 <div class="grid cards" markdown>
+
 [:fontawesome-brands-blogger-b:{ .lg .middle }&nbsp; **Blogs** &nbsp;](blog/index.md){ .md-button style="text-align: center; display: block;" }
+
+[:material-account-box:{ .lg .middle }&nbsp; **About** &nbsp;](about/index.md){ .md-button style="text-align: center; display: block;" }
+
 
 [//]: # ([:material-notebook-multiple:{ .lg .middle }&nbsp; **Projects** &nbsp;]&#40;project/index.md&#41;{ .md-button style="text-align: center; display: block;" })
 
