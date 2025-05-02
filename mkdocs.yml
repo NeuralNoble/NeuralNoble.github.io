@@ -4,12 +4,17 @@ site_url: https://NeuralNoble.github.io
 site_author: Aman Anand
 repo_url: https://github.com/NeuralNoble/NeuralNoble.github.io
 repo_name: NeuralNoble/NeuralNoble.github.io
+
 theme:
-  name: "material"
-  custom_dir: overrides
-  icon:
-    repo: material/book
-    logo: fontawesome/solid/brain
+  name: material
+  palette:
+    primary: black
+#theme:
+#  name: "material"
+#  custom_dir: overrides
+#  icon:
+#    repo: material/book
+#    logo: fontawesome/solid/brain
 
   features:
     - content.code.annotate
@@ -33,21 +38,21 @@ theme:
 
 
 
-  palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: teal
-      accent: deep orange
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: teal
-      accent: deep orange
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
+#  palette:
+#    - media: "(prefers-color-scheme: light)"
+#      scheme: default
+#      primary: teal
+#      accent: deep orange
+#      toggle:
+#        icon: material/brightness-7
+#        name: Switch to dark mode
+#    - media: "(prefers-color-scheme: dark)"
+#      scheme: slate
+#      primary: black
+#      accent: deep orange
+#      toggle:
+#        icon: material/brightness-4
+#        name: Switch to light mode
   font:
     text: Roboto
     code: Roboto Mono
@@ -95,9 +100,6 @@ markdown_extensions:
 #      permalink: true
   - pymdownx.superfences:
       custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
         - name: math
           class: arithmatex
           format:
@@ -147,6 +149,7 @@ plugins:
       include_yaml:
         - about: docs/render_yaml/about.yaml
 
+
   - glightbox:
       touchNavigation: false
       loop: false
@@ -154,13 +157,14 @@ plugins:
       width: 100%
       height: auto
       zoomable: true
-      draggable: true
+      draggable: true         # <-- add this line
 
 
 hooks:
   - hooks/socialmedia.py
   - hooks/generate_simpleicons_css.py
   - hooks/prettify_simpleicons_json.py
+
 
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
@@ -175,4 +179,8 @@ nav:
   - Home: index.md
   - Blog:
       - blog/index.md
+      - blog/posts/self_attention.md
+  - Projects:
+      - Projects/index.md
+      - Projects/posts/portfolio-chatbot.md
   - About: about/index.md

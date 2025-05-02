@@ -33,7 +33,7 @@ icon: material/account-box
 
 <p style="text-align: justify;" markdown>
 
-I’m a second -year Computer Science undergraduate ,based in Bangalore, with a deep passion for understanding how the universe around us works. Currently, I’m teaching myself machine learning and deep learning, driven by curiosity and a desire to build and improve technologies. I thrive on pushing the boundaries of what’s possible and exploring new frontiers in tech.
+I’m a  Computer Science Student ,based in Bangalore, with a deep passion for understanding how the universe around us works. Currently, I’m teaching myself machine learning and deep learning, driven by curiosity and a desire to build and improve technologies. I thrive on pushing the boundaries of what’s possible and exploring new frontiers in tech.
 
 </p>
 
