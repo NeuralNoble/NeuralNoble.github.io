@@ -22,7 +22,7 @@ icon: octicons/home-fill-24
 
   <p style="text-align: center; font-size: 25px; margin: 0px;"><strong>Aman Anand</strong></p>
   <p style="text-align: center; margin: 0px;">
-I’m a Computer Science Student ,based in Bangalore, with a deep passion for understanding how the universe around us works. Currently, I’m teaching myself machine learning and deep learning, driven by curiosity and a desire to build and improve technologies. I thrive on pushing the boundaries of what’s possible and exploring new frontiers in tech.
+I’m a curious and hands-on AI/ML learner with a deep interest in deep learning, computer vision, and generative AI. I love building intelligent systems, thinking in terms of agents and pipelines, and constantly pushing to understand how things work under the hood.
 </p>
 </p>
 
@@ -37,7 +37,9 @@ I’m a Computer Science Student ,based in Bangalore, with a deep passion for un
 [:material-notebook-multiple:{ .lg .middle }&nbsp; **Projects** &nbsp;](Projects/index.md){ .md-button style="text-align: center; display: block;" }
 
 
-[//]: # ([:material-notebook-multiple:{ .lg .middle }&nbsp; **Projects** &nbsp;]&#40;project/index.md&#41;{ .md-button style="text-align: center; display: block;" })
+[:material-file-document:{ .lg .middle }&nbsp; **Resume** &nbsp;](https://drive.google.com/file/d/1Cw-17fidB4zshCZN5RXpriasDHs58Pn7/view){ .md-button style="text-align: center; display: block;" target="_blank" }
 
+
+[//]: # ([:material-notebook-multiple:{ .lg .middle }&nbsp; **Projects** &nbsp;]&#40;project/index.md&#41;{ .md-button style="text-align: center; display: block;" })
 
 </div>

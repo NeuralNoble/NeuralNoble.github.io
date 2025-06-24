@@ -32,9 +32,7 @@ icon: material/account-box
 </p>
 
 <p style="text-align: justify;" markdown>
-
-I’m a  Computer Science Student ,based in Bangalore, with a deep passion for understanding how the universe around us works. Currently, I’m teaching myself machine learning and deep learning, driven by curiosity and a desire to build and improve technologies. I thrive on pushing the boundaries of what’s possible and exploring new frontiers in tech.
-
+I'm an AI/ML enthusiast obsessed with understanding how intelligent systems work and how to build them from the ground up. I love exploring deep learning, computer vision, and generative AI—not just in theory but as tools to create things that matter. I'm constantly experimenting, questioning, and learning—whether it’s cracking the math behind models or designing agentic systems that solve real problems. I think in systems, break things to understand them, and build with intent. My goal? To become one of the best in this field—not just technically, but in how I think and create.
 </p>
 
 ---
