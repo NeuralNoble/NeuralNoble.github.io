@@ -14,7 +14,7 @@ An intuitive journey into how they shape learning, bend gradients, and sometimes
 
 Activation functions are what make a neural network more than just a stack of linear equations. Without them, no matter how many layers you add, the network collapses into a single linear mapping.
 
-??? question  " 🤔 Why do we need non-linearity in the first place?"
+!!! info " 🤔 Why do we need non-linearity in the first place?"
      If we keep stacking linear layers , as shown in the animation below , the network still acts like just one big linear layer. You can multiply all those weight matrices into one, and the output will still be a straight line.
 
     The problem is this. Sometimes the decision boundary that separates different classes is not a straight line. It might be curved, twisted, or broken into multiple pieces.
@@ -62,7 +62,7 @@ The sigmoid function is differentiable, which is a crucial requirement for backp
 ```math
 \frac{d\sigma(z)}{dz} = \sigma(z)\left(1 - \sigma(z)\right)
 ```
-??? info "Sigmoid derivative derivation"
+!!! abstract  "Sigmoid derivative derivation"
     ```math
     \text{Let } \sigma(z) = \frac{1}{1 + e^{-z}} = (1 + e^{-z})^{-1}
     ```
@@ -156,7 +156,7 @@ We want to find
 ```
 Gradient of the loss with respect to layer 1's input.
 
-!!! Note 
+!!! info
     **We begin at the end of the network and apply the chain rule backward.**
 
 #### Step 1: From loss to the last layer

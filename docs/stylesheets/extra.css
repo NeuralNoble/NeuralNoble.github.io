@@ -106,3 +106,8 @@
 .md-typeset .slim-button {
   padding: 0.3em 1.3em;
 }
+
+.md-typeset .admonition,
+.md-typeset details {
+  font-size: 0.8rem;  /* You can go higher if needed */
+}
