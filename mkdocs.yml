@@ -167,6 +167,7 @@ nav:
   - Blog:
       - blog/index.md
       - blog/posts/self_attention.md
+      - blog/posts/Activation-functions.md
   - Projects:
       - Projects/index.md
       - Projects/posts/portfolio-chatbot.md
