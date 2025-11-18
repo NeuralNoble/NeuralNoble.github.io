@@ -36,6 +36,7 @@ theme:
     - navigation.tracking
     - search.share
     - toc.follow
+    - content.math
 
 
 
@@ -97,6 +98,8 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+
 
 
 extra:
@@ -168,6 +171,7 @@ nav:
       - blog/index.md
       - blog/posts/self_attention.md
       - blog/posts/Activation-functions.md
+      - blog/posts/GELU.md
   - Projects:
       - Projects/index.md
       - Projects/posts/portfolio-chatbot.md
