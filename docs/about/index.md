@@ -32,7 +32,9 @@ icon: material/account-box
 </p>
 
 <p style="text-align: justify;" markdown>
-I'm an AI/ML enthusiast obsessed with understanding how intelligent systems work and how to build them from the ground up. I love exploring deep learning, computer vision, and generative AI—not just in theory but as tools to create things that matter. I'm constantly experimenting, questioning, and learning—whether it’s cracking the math behind models or designing agentic systems that solve real problems. I think in systems, break things to understand them, and build with intent. My goal? To become one of the best in this field—not just technically, but in how I think and create.
+I’m someone who can’t leave a system alone until I understand every moving part in it. AI/ML is the only place where that obsession actually feels useful. I spend most of my time building things that force me to learn  small GPTs, vision systems, distributed setups(still exploring), whatever pulls me deeper under the hood.
+I think in terms of tokens, tensors, pipelines, and agents talking to each other and I like turning messy intuition into something real that actually runs. Long term, I want to build intelligent systems that feel modular, sharp, and alive.
+For now, I’m just improving every day, experimenting nonstop, and seeing how far I can push this path.
 </p>
 
 ---
@@ -53,18 +55,18 @@ I'm an AI/ML enthusiast obsessed with understanding how intelligent systems work
 <div class="grid cards" markdown>
 
   - **{{ exp.title }}**<br>
-    <small>{{ exp.company }} **•** {{ exp.period }}</small>
+    <small>{{ exp.company }} • {{ exp.period }}</small>
 
     {% if exp.points|length %} --- {% endif %}
 
     {% for point in exp.points %}
-    - :{{ point.icon }}: {{ point.desc }}
-    {: .experiences-li }
+    - {{ point.desc }}
     {% endfor %}
 
 </div>
 
 {% endfor %}
+
 
 
 ---

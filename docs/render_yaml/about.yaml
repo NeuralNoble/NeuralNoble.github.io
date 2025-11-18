@@ -19,16 +19,29 @@ project_ids:
     icon:
 
 experiences:
-  - title: Machine Learning Intern
-    company: "@VideoVerse"
-    period: August 2024 - Dec 2024 (6 months)
+  - title: AI Engineer Intern
+    company: "@Vedantu"
+    period: Jun 2025 – Aug 2025
     points:
-      - icon: simple-raycast
-        desc: Optimized machine learning model performance through rigorous load testing and latency reduction, improving system efficiency and user experience.
-      - icon: simple-langchain
-        desc: Developed an innovative natural language search system using vector embeddings, enabling users to search video content using semantic queries.
-      - icon: simple-pytorch
-        desc: Refined and streamlined data pipelines by identifying and eliminating redundant steps, resulting in improved pipeline performance and reduced processing time.
+      - desc: Designed and deployed an AI-powered product enabling parents to evaluate their children’s handwritten worksheets by uploading a single photo.
+      - desc: Achieved 97% evaluation accuracy (matching or exceeding teacher quality) across test papers.
+      - desc: Implemented advanced image preprocessing pipelines including automatic aspect ratio correction, distortion removal, and intelligent cropping.
+      - desc: Developed detailed question-wise analytics, annotated answer sheets with teacher-like markings, and knowledge gap identification.
+      - desc: Integrated real-time holistic assessment reports for parents, enhancing engagement and trust.
+      - desc: Built a pipeline to generate explanatory videos on-the-fly for incorrectly answered questions, significantly improving learning outcomes.
+      - desc: Automated content generation tailored to each student’s errors, reducing turnaround time to near-instantaneous.
+      - desc: Created a video-based AI doubt-solving system that reduced the percentage of students requesting human teacher intervention.
+      - desc: Improved doubt resolution satisfaction scores by delivering more context-rich, visually clear explanations.
+
+  - title: Machine Learning Engineer Intern
+    company: "@VideoVerse"
+    period: Aug 2024 – Dec 2024
+    points:
+      - desc: Built an end-to-end platform to retrieve highlight clips (sixes, goals, catches, key moments) from thousands of assets via natural-language queries.
+      - desc: Created embeddings from OCR, ASR transcripts, and metadata, stored them in a vector database, and implemented hybrid search to improve accuracy.
+      - desc: Designed ranking that blends semantic similarity, temporal context and league/team/entity priors; added filters (match, player, team, over/quarter).
+      - desc: Ran load testing across multiple services to surface throughput and latency bottlenecks and removed a redundant step in one of the pipeline, reducing end-to-end response time.
+
 
 tech_stack:
   Languages:

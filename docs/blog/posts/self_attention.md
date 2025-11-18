@@ -6,7 +6,7 @@ authors:
   
 ---
 
-# **Self-Attention: The Magic Behind Transformers and the AI Revolution**
+# **Self-Attention: The Magic Behind Transformers and the AI Revolution** (old, redundant writing new)
 
 Today, we're diving into something that's at the core of Transformers, and Transformers themselves are at the core of this AI revolution! 
 

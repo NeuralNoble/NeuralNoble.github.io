@@ -6,7 +6,7 @@ authors:
   
 ---
 
-# **Activation Functions in Deep Learning**
+# **Activation Functions in Deep Learning** (in progress)
 
 An intuitive journey into how they shape learning, bend gradients, and sometimes break them.
 

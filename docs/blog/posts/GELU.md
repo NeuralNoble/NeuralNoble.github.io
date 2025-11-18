@@ -114,22 +114,11 @@ PDF \xrightarrow{\text{integrates}} CDF
 ```
 For standard normal  distribution
 
-1. if 
-```math 
-x=0 \rightarrow CDF(0) = 0.5
-```
-    Because half the curve is left of zero
+1. if `#!math x=0 \rightarrow CDF(0) = 0.5`. Because half the curve is left of zero
     
-2. if 
-```math
-x=2 \rightarrow CDF(2) \approx 0.977
-```
-    Because 97.7% of the bell curve is to the left of 2
+2. if `#!math x=2 \rightarrow CDF(2) \approx 0.977`. Because 97.7% of the bell curve is to the left of 2
     
-3. if 
-```math
-x=-2 \rightarrow CDF(-2) \approx 0.022
-```
+3. if `#!math x=-2 \rightarrow CDF(-2) \approx 0.022`.
 
 So we get the following intuition:
 
