@@ -1,6 +1,8 @@
 ---
 date: 2025-11-18
-  
+slug: gelu
+search:
+  boost: 2
 authors:
   - Aman
   

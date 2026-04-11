@@ -1,3 +1,13 @@
+<script>
+  var defined = document.querySelector("[data-md-component=palette]");
+  if (defined) {
+    var defined2 = JSON.parse(defined.querySelector("input").value || "{}");
+    var giscusTheme = (defined2.scheme === "slate") ? "dark" : "light";
+  } else {
+    var giscusTheme = "light";
+  }
+</script>
+
 <script src="https://giscus.app/client.js"
         data-repo="NeuralNoble/NeuralNoble.github.io"
         data-repo-id="R_kgDONwa27A"
@@ -12,4 +22,39 @@
         data-lang="en"
         crossorigin="anonymous"
         async>
+</script>
+
+<script>
+  // Set initial theme
+  (function() {
+    var palette = document.querySelector("[data-md-component=palette]");
+    if (palette) {
+      var scheme = JSON.parse(palette.querySelector("input").value || "{}").scheme;
+      var theme = (scheme === "slate") ? "dark" : "light";
+      var frame = document.querySelector("iframe.giscus-frame");
+      if (frame) {
+        frame.contentWindow.postMessage(
+          { giscus: { setConfig: { theme: theme } } },
+          "https://giscus.app"
+        );
+      }
+    }
+  })();
+
+  // Listen for palette toggle changes
+  var observer = new MutationObserver(function() {
+    var palette = document.querySelector("[data-md-component=palette]");
+    if (palette) {
+      var scheme = JSON.parse(palette.querySelector("input").value || "{}").scheme;
+      var theme = (scheme === "slate") ? "dark" : "light";
+      var frame = document.querySelector("iframe.giscus-frame");
+      if (frame) {
+        frame.contentWindow.postMessage(
+          { giscus: { setConfig: { theme: theme } } },
+          "https://giscus.app"
+        );
+      }
+    }
+  });
+  observer.observe(document.body, { attributes: true, attributeFilter: ["data-md-color-scheme"] });
 </script>

@@ -1,4 +1,4 @@
-site_name: NeuralNoble
+site_name: Epoch Notes
 site_description: Explore deep learning, machine learning, and MLOps through personal projects, tutorials, and insights. Join me as I dive into the world of AI and share my journey.
 site_url: https://NeuralNoble.github.io
 site_author: Aman Anand
@@ -9,13 +9,18 @@ theme:
   name: material
   custom_dir: overrides
   palette:
-    primary: black
-#theme:
-#  name: "material"
-#  custom_dir: overrides
-#  icon:
-#    repo: material/book
-#    logo: fontawesome/solid/brain
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
 
   features:
     - content.code.annotate
@@ -33,6 +38,7 @@ theme:
     - content.action.view
     - navigation.sections
     - navigation.footer
+    - navigation.instant
     - navigation.tracking
     - search.share
     - toc.follow
@@ -40,21 +46,6 @@ theme:
 
 
 
-#  palette:
-#    - media: "(prefers-color-scheme: light)"
-#      scheme: default
-#      primary: teal
-#      accent: deep orange
-#      toggle:
-#        icon: material/brightness-7
-#        name: Switch to dark mode
-#    - media: "(prefers-color-scheme: dark)"
-#      scheme: slate
-#      primary: black
-#      accent: deep orange
-#      toggle:
-#        icon: material/brightness-4
-#        name: Switch to light mode
   font:
     text: Roboto
     code: Roboto Mono
@@ -93,6 +84,9 @@ markdown_extensions:
           format:
             !!python/object/apply:pymdownx.arithmatex.arithmatex_fenced_format
             kwds: { which: generic }
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.emoji:
@@ -104,15 +98,18 @@ markdown_extensions:
 
 extra:
   social:
-      - icon: material/email
-        link: mailto:amananand1618@gmail.com
-        name: E-Mail
+      - icon: fontawesome/brands/x-twitter
+        link: https://x.com/NeuralWarlock
+        name: Follow on X
       - icon: fontawesome/brands/github
         link: https://github.com/NeuralNoble
         name: See my GitHub Profile
       - icon: fontawesome/brands/linkedin
         link: https://www.linkedin.com/in/aman-anand-10b51320b/
         name: Connect on LinkedIn
+      - icon: material/email
+        link: mailto:amananand1618@gmail.com
+        name: E-Mail
   #    - icon: material/account-box
   #      link:
   #      name: Resume as PDF
@@ -132,6 +129,7 @@ plugins:
         generate_archive: true
         post_url_format: "{slug}"
   - search:
+  - social:
   - minify:
       minify_html: true
 
@@ -169,9 +167,13 @@ nav:
   - Home: index.md
   - Blog:
       - blog/index.md
-      - blog/posts/self_attention.md
-      - blog/posts/Activation-functions.md
       - blog/posts/GELU.md
+      - blog/posts/Activation-functions.md
+      - blog/posts/self_attention.md
+
+
+  - Notes:
+      - notes/index.md
   - Projects:
       - Projects/index.md
       - Projects/posts/portfolio-chatbot.md

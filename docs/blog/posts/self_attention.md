@@ -1,6 +1,8 @@
 ---
 date: 2024-11-06
-  
+slug: self-attention
+search:
+  boost: 1.5
 authors:
   - Aman
   

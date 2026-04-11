@@ -19,6 +19,12 @@ project_ids:
     icon:
 
 experiences:
+  - title: AI/ML Engineer
+    company: "@Rumik AI"
+    period: Present
+    points:
+      - desc: Training voice models and perception models for intelligent systems.
+
   - title: AI Engineer Intern
     company: "@Vedantu"
     period: Jun 2025 – Aug 2025

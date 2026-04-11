@@ -1,6 +1,8 @@
 ---
 date: 2025-09-14
-  
+slug: activation-functions
+search:
+  boost: 1.5
 authors:
   - Aman
   

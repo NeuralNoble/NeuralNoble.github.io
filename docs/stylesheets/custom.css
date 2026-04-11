@@ -99,23 +99,31 @@ div.md-content header {
 }
 
 .md-post--excerpt {
-  background-color: #eef3fb;
-  /*box-shadow: 0 0 0 1rem var(--md-accent-fg-color--transparent);*/
-  /*border-radius: var(--base-border-radius);*/
-  padding: 1rem 1.5rem;
-  margin: 1.5rem auto;               /* space between cards */
-  border-radius: var(--base-border-radius);
-  max-width: 700px;                  /* keep them contained */
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08); /* subtle shadow */
+  background: transparent;
+  padding: 0.8rem 0;
+  margin: 0 auto;
+  max-width: 700px;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.md-post--excerpt:last-of-type {
+  border-bottom: none;
 }
 
 .md-post--excerpt .md-post__header {
-  justify-content: center;
+  justify-content: flex-start;
 }
 
-.md-post--excerpt .md-post__content > h2,
+.md-post--excerpt .md-post__content > h2 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
 .md-post__action {
-  text-align: center;
+  text-align: left;
 }
 
 /* Table */
