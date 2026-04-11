@@ -47,8 +47,8 @@ theme:
 
 
   font:
-    text: Roboto
-    code: Roboto Mono
+    text: Inter
+    code: JetBrains Mono
 
 
 

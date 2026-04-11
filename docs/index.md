@@ -68,6 +68,7 @@ article > h1 { display: none; }
   line-height: 1.6;
   margin-bottom: 0.8rem;
   color: var(--md-default-fg-color);
+  font-family: var(--md-text-font-family) !important;
 }
 
 .home-bio a {

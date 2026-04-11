@@ -4,6 +4,36 @@
   {{ super() }}
 <script defer src="https://cloud.umami.is/script.js"
         data-website-id="115ec34b-d541-4be6-92b4-280f42450c68">
-
 </script>
+<style>
+  .scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: var(--md-accent-fg-color);
+    z-index: 9999;
+    width: 0%;
+  }
+</style>
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <div class="scroll-progress" id="scroll-progress"></div>
+  <script>
+    function updateProgress() {
+      var bar = document.getElementById("scroll-progress");
+      if (!bar) return;
+      var h = document.documentElement;
+      var scrollable = h.scrollHeight - h.clientHeight;
+      bar.style.width = scrollable > 0 ? Math.min((h.scrollTop / scrollable) * 100, 100) + "%" : "0%";
+    }
+    window.addEventListener("scroll", updateProgress);
+    document.addEventListener("DOMContentLoaded", updateProgress);
+    // Re-run on instant navigation
+    if (typeof document$ !== "undefined") {
+      document$.subscribe(function() { updateProgress(); });
+    }
+  </script>
 {% endblock %}

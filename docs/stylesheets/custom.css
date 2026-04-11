@@ -1,6 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap');
+
 :root {
   --admonition-border-left-width: 0.2rem;
   --base-border-radius: 0.5rem;
+  --serif-font: 'Source Serif 4', Georgia, serif;
+}
+
+/* Serif font for blog post body text */
+.md-content .md-typeset p,
+.md-content .md-typeset li,
+.md-content .md-typeset blockquote {
+  font-family: var(--serif-font);
+  font-size: 0.9rem;
+  line-height: 1.75;
 }
 
 /* Change font family of filename present on top of code block. */
@@ -99,31 +111,67 @@ div.md-content header {
 }
 
 .md-post--excerpt {
-  background: transparent;
-  padding: 0.8rem 0;
-  margin: 0 auto;
+  background: var(--md-code-bg-color);
+  padding: 0.7rem 1rem;
+  margin: 0.5rem auto;
   max-width: 700px;
-  border-bottom: 1px solid var(--md-default-fg-color--lightest);
-  border-radius: 0;
+  border-left: none;
+  border-radius: var(--base-border-radius);
   box-shadow: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-.md-post--excerpt:last-of-type {
-  border-bottom: none;
+.md-post--excerpt .md-post__content p {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin: 0.2rem 0;
+}
+
+.md-post--excerpt:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+[data-md-color-scheme="slate"] .md-post--excerpt:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 .md-post--excerpt .md-post__header {
   justify-content: flex-start;
+  font-family: var(--md-code-font-family);
+  font-size: 0.7rem;
+  opacity: 0.7;
 }
 
 .md-post--excerpt .md-post__content > h2 {
-  font-size: 1.05rem;
-  font-weight: 600;
-  margin-bottom: 0.2rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 0.15rem;
+  font-family: var(--md-text-font-family);
+}
+
+.md-post--excerpt .md-post__content > h2 a {
+  color: var(--md-default-fg-color);
+  transition: color 0.15s;
+}
+
+.md-post--excerpt .md-post__content > h2 a:hover {
+  color: var(--md-accent-fg-color);
 }
 
 .md-post__action {
   text-align: left;
+  font-family: var(--md-code-font-family);
+  font-size: 0.78rem;
+}
+
+.md-post__action a {
+  color: var(--md-default-fg-color--light);
+  transition: color 0.15s;
+}
+
+.md-post__action a:hover {
+  color: var(--md-accent-fg-color);
 }
 
 /* Table */
