@@ -68,6 +68,17 @@
   border-radius: var(--base-border-radius);
 }
 
+/* Footer */
+.md-footer {
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-footer-meta {
+  background: transparent;
+}
+
 /* Footer: Social Links */
 .md-social__link svg {
   max-height: 1rem;
@@ -118,7 +129,7 @@ div.md-content header {
 }
 
 .md-post--excerpt {
-  background: var(--md-code-bg-color);
+  background: var(--md-default-bg-color);
   padding: 0.7rem 1rem;
   margin: 0.5rem auto;
   max-width: 700px;
