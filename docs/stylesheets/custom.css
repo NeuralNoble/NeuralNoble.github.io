@@ -15,6 +15,13 @@
   line-height: 1.75;
 }
 
+/* Make sure h1 stays bold and visible */
+.md-content .md-typeset h1 {
+  font-family: var(--md-text-font-family);
+  font-weight: 800;
+  color: var(--md-default-fg-color);
+}
+
 /* Change font family of filename present on top of code block. */
 .highlight span.filename {
   border-bottom: none;

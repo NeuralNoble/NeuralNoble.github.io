@@ -133,9 +133,7 @@ article > h1 { display: none; }
 }
 
 .home-section-title::before {
-  content: "\222B\00a0";
-  color: var(--md-default-fg-color--light);
-  font-weight: 400;
+  content: none;
 }
 
 /* Post cards */
@@ -224,8 +222,18 @@ article > h1 { display: none; }
 /* Divider */
 .home-divider {
   border: none;
-  border-top: 2px solid var(--md-default-fg-color--light);
-  margin: 1.2rem 0;
+  margin: 1.6rem 0;
+  height: 0;
+  text-align: center;
+  overflow: visible;
+  line-height: 0;
+}
+
+.home-divider::after {
+  content: "· · ·";
+  font-size: 1.1rem;
+  letter-spacing: 0.4em;
+  color: var(--md-default-fg-color--light);
 }
 </style>
 
@@ -263,6 +271,9 @@ article > h1 { display: none; }
         Resume
       </a>
     </div>
+
+    <p class="home-section-title" style="margin-top: 1.4rem;">Things I'm Into</p>
+    <p style="font-size: 0.82rem; color: var(--md-default-fg-color--light); font-family: var(--serif-font); line-height: 1.6;">idk, still figuring it out 🤷</p>
   </div>
 
   <div class="home-right">
@@ -282,15 +293,17 @@ article > h1 { display: none; }
 
     <p class="home-section-title">Projects</p>
 
-    <div class="home-posts">
-      <a class="home-post" href="Projects/posts/portfolio-chatbot/">
-        <div class="home-post-date">Apr 2025</div>
-        <div class="home-post-title">Portfolio Chatbot</div>
-        <p class="home-post-desc">A lightweight OpenAI-powered chatbot that reads a JSON resume, answers visitor questions, and pushes leads to my phone in real time.</p>
-      </a>
-    </div>
+    <p style="font-size: 0.82rem; color: var(--md-default-fg-color--light); padding-left: 0.8rem;"><em>Coming soon.</em></p>
 
     <a class="home-see-all" href="Projects/">See all projects &rarr;</a>
+
+    <hr class="home-divider">
+
+    <p class="home-section-title">🧪 Experiments</p>
+
+    <p style="font-size: 0.82rem; color: var(--md-default-fg-color--light); padding-left: 0.8rem;"><em>Coming soon.</em></p>
+
+    <a class="home-see-all" href="experiments/">See all experiments &rarr;</a>
   </div>
 
 </div>

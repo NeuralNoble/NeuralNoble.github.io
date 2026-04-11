@@ -11,13 +11,13 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: black
+      primary: white
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: black
+      primary: white
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -169,12 +169,12 @@ nav:
       - blog/index.md
       - blog/posts/GELU.md
       - blog/posts/Activation-functions.md
-      - blog/posts/self_attention.md
 
 
+  - Experiments:
+      - experiments/index.md
   - Notes:
       - notes/index.md
   - Projects:
       - Projects/index.md
-      - Projects/posts/portfolio-chatbot.md
   - About: about/index.md
