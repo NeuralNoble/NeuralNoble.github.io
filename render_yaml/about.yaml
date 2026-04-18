@@ -1,0 +1,119 @@
+socials:
+  - title: GitHub Profile
+    icon: simple-github
+    url: https://github.com/NeuralNoble/
+  - title: Personal Website
+    icon: fontawesome-solid-brain
+    url: https://NeuralNoble.github.io/
+  - title: LinkedIn Profile
+    icon: material-linkedin
+    url: https://www.linkedin.com/in/aman-anand-10b51320b/
+  - title: E-Mail
+    icon: material-email
+    url: mailto:amananand1618@gmail.com
+
+
+
+project_ids:
+  - id:
+    icon:
+
+experiences:
+  - title: AI/ML Engineer
+    company: "@Rumik AI"
+    period: Present
+    points:
+      - desc: Training voice models and perception models for intelligent systems.
+
+  - title: AI Engineer Intern
+    company: "@Vedantu"
+    period: Jun 2025 – Aug 2025
+    points:
+      - desc: Designed and deployed an AI-powered product enabling parents to evaluate their children’s handwritten worksheets by uploading a single photo.
+      - desc: Achieved 97% evaluation accuracy (matching or exceeding teacher quality) across test papers.
+      - desc: Implemented advanced image preprocessing pipelines including automatic aspect ratio correction, distortion removal, and intelligent cropping.
+      - desc: Developed detailed question-wise analytics, annotated answer sheets with teacher-like markings, and knowledge gap identification.
+      - desc: Integrated real-time holistic assessment reports for parents, enhancing engagement and trust.
+      - desc: Built a pipeline to generate explanatory videos on-the-fly for incorrectly answered questions, significantly improving learning outcomes.
+      - desc: Automated content generation tailored to each student’s errors, reducing turnaround time to near-instantaneous.
+      - desc: Created a video-based AI doubt-solving system that reduced the percentage of students requesting human teacher intervention.
+      - desc: Improved doubt resolution satisfaction scores by delivering more context-rich, visually clear explanations.
+
+  - title: Machine Learning Engineer Intern
+    company: "@VideoVerse"
+    period: Aug 2024 – Dec 2024
+    points:
+      - desc: Built an end-to-end platform to retrieve highlight clips (sixes, goals, catches, key moments) from thousands of assets via natural-language queries.
+      - desc: Created embeddings from OCR, ASR transcripts, and metadata, stored them in a vector database, and implemented hybrid search to improve accuracy.
+      - desc: Designed ranking that blends semantic similarity, temporal context and league/team/entity priors; added filters (match, player, team, over/quarter).
+      - desc: Ran load testing across multiple services to surface throughput and latency bottlenecks and removed a redundant step in one of the pipeline, reducing end-to-end response time.
+
+
+tech_stack:
+  Languages:
+    - title: Python
+      icon: simple-python
+    - title: HTML
+      icon: simple-html5
+    - title: CSS
+      icon: simple-css3
+    - title: Jinja
+      icon: simple-jinja
+    - title: Bash
+      icon: simple-gnubash
+    - title: JavaScript
+      icon: simple-javascript
+  Frameworks:
+
+    - title: FastAPI
+      icon: simple-fastapi
+    - title: Streamlit
+      icon: simple-streamlit
+    - title: MongoDB
+      icon: simple-mongodb
+    - title: MySQL
+      icon: simple-mysql
+    - title: SQLite
+      icon: simple-sqlite
+    - title: Taipy
+      icon: simple-taipy
+    - title: Scrapy
+      icon: simple-scrapy
+  Dev Tools:
+    - title: pre-commit
+      icon: simple-precommit
+    - icon: simple-starship
+      title: Starship Prompt
+    - title: Raycast
+      icon: simple-raycast
+    - title: Zed Code Editor
+      icon: simple-zedindustries
+    - title: Taskfile
+      icon: simple-task
+#  Dev/ML Ops:
+#    - title: Docker
+#      icon: simple-docker
+#    - title: GitHub Actions
+#      icon: simple-githubactions
+#    - title: MLFlow
+#      icon: simple-mlflow
+#    - title: PyPI
+#      icon: simple-pypi
+  Data Science:
+    - title: Pytorch
+      icon: simple-pytorch
+    - title: Scikit-Learn
+      icon: simple-scikitlearn
+    - title: Polars
+      icon: simple-polars
+    - title: Pandas
+      icon: simple-pandas
+    - title: Numpy
+      icon: simple-numpy
+    - title: Plotly
+      icon: simple-plotly
+    - title: Hugging Face
+      icon: simple-huggingface
+    - title: LangChain
+      icon: simple-langchain
+
