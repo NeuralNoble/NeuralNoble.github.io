@@ -11,7 +11,7 @@ authors:
 # **Gaussian Error Linear Units (GELUs)** 
 
 
-The **GELU** is an activation function introduced in the paper **[Gaussian Error Linear Units](https://arxiv.org/abs/1606.08415)**. If you're unfamiliar with **activation functions** or want a refresher, you can check out **[this blog](https://neuralnoble.github.io/blog/activation-functions-in-deep-learning/)** where I explain them in detail.
+The **GELU** is an activation function introduced in the paper **[Gaussian Error Linear Units](https://arxiv.org/abs/1606.08415)**. If you're unfamiliar with **activation functions** or want a refresher, you can check out **[this blog](../activation-functions/)** where I explain them in detail.
 
 <!-- more -->
 
