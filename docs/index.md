@@ -219,6 +219,58 @@ article > h1 { display: none; }
   color: var(--md-accent-fg-color);
 }
 
+/* Currently / Now section */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.4); opacity: 0.6; }
+}
+
+.pulse-dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #22c55e;
+  margin-right: 0.3rem;
+  vertical-align: middle;
+  animation: pulse 1.8s ease-in-out infinite;
+  box-shadow: 0 0 6px rgba(34, 197, 94, 0.5);
+}
+
+.home-now {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  font-family: var(--serif-font);
+  color: var(--md-default-fg-color);
+}
+
+.home-now li {
+  padding: 0.2rem 0 0.2rem 0.8rem;
+  position: relative;
+}
+
+.home-now li::before {
+  content: "›";
+  position: absolute;
+  left: 0;
+  color: var(--md-accent-fg-color);
+  font-weight: 700;
+}
+
+.home-now a {
+  color: var(--md-default-fg-color);
+  border-bottom: 1px dashed var(--md-default-fg-color--light);
+  text-decoration: none;
+}
+
+.home-now a:hover {
+  color: var(--md-accent-fg-color);
+  border-bottom-color: var(--md-accent-fg-color);
+}
+
 /* Divider */
 .home-divider {
   border: none;
@@ -271,6 +323,13 @@ article > h1 { display: none; }
         Resume
       </a>
     </div>
+
+    <p class="home-section-title home-currently-title" style="margin-top: 1.4rem;">
+      <span class="pulse-dot"></span> Currently
+    </p>
+    <ul class="home-now">
+      <li>Learning <a href="https://ml-explore.github.io/mlx/" target="_blank">MLX</a></li>
+    </ul>
 
     <p class="home-section-title" style="margin-top: 1.4rem;">Things I'm Into</p>
     <p style="font-size: 0.82rem; color: var(--md-default-fg-color--light); font-family: var(--serif-font); line-height: 1.6;">idk, still figuring it out 🤷</p>
