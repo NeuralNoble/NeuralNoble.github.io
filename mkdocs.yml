@@ -175,6 +175,7 @@ nav:
       - experiments/index.md
   - Notes:
       - notes/index.md
+      - notes/broadcasting-pytorch.md
   - Projects:
       - Projects/index.md
   - About: about/index.md
